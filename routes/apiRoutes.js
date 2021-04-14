@@ -1,6 +1,4 @@
-
-// const { model } = require("mongoose");
-
+const db = require("/models");
 const router = require ("express").Router();
 //api routes
 
