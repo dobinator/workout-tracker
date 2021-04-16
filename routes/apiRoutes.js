@@ -55,14 +55,41 @@ router.post("/workouts", function (req, res) {
 });
 
 //api/workouts/range
-router.get("/workouts/range", async function (req, res) {
+router.get("/workouts/range", async (req, res)=> {
   try {
-    const data = await Workout.find();
-    res.json(data);
+    const data = await Workout.aggregate([
+     { $limit :7 },
+     {
+      $addFields: {
+        totalDuration: {
+          $sum: '$exercises.duration',
+        },
+        numExercises: {
+          $sum: '$execises.name',
+        },
+        totalWeight: {
+          $sum: '$exercises.pounds',
+        },
+        totalSets: {
+          $sum: '$execises.sets'
+        },
+       totalReps: {
+         $sum: '$exercises.rep',
+       },
+      totalDistance: {
+        $sum: '$exercises.distance',
+      },
+      }
+     }
+    ]) 
+      res.json(data);
   } catch (err) {
     console.log(err);
     res.json(err);
   }
 });
+
+
+
 
 module.exports = router;
