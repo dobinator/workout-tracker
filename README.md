@@ -17,16 +17,22 @@ This application was created for the user who is interested in being able to vie
 
 
 ## Installation:
+npm install
 
 ## Dependencies:
+express
+mongoose
+morgan
 
 ## Testing:
+n/a
 
 ## Questions:
  If you have any questions please contact me at dobsonemily@gmail.com
 ## Contact:
 
-
+https://github.com/dobinator
+dobsonemily@gmail.com
 
 
 Image
@@ -34,4 +40,5 @@ Image
 
 Heroku link:
 
+https://git.heroku.com/fitness-tracker-emd.git
 
