@@ -40,5 +40,5 @@ Image
 
 Heroku link:
 
-https://git.heroku.com/fitness-tracker-emd.git
+https://fitness-tracker-emd.herokuapp.com/
 
