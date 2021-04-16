@@ -23,13 +23,14 @@ This application was created for the user who is interested in being able to vie
 ## Testing:
 
 ## Questions:
-
+ If you have any questions please contact me at dobsonemily@gmail.com
 ## Contact:
 
 
 
+
 Image
-![workout tracker]()
+![workout tracker](./public/image/screen.png)
 
 Heroku link:
 
